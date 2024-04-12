@@ -1,3 +1,4 @@
+/* I made it look like in the progress of scanning */
 body {
     margin: 0;
     padding: 0;
@@ -10,20 +11,20 @@ body {
 
 .image-stack {
     position: relative; /* Set positioning context for absolute positioning */
-    width: 100vw; /* Set width to fit the viewport width */
-    height: 100vh; /* Set height to fit the viewport height */
+    width: 100vw; /* Width to fit the viewport width */
+    height: 100vh; /* Height to fit the viewport height */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Align items in two columns */
     align-items: flex-start; /* Align items to the top */
-    padding: 20px; /* Add padding for spacing */
+    padding: 20px;
     box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .item {
     flex-basis: calc(33.33% - 20px); /* Three columns with gap */
     margin-bottom: 20px; /* Adjust spacing between rows */
-    position: relative; /* Set positioning context for absolute positioning */
+    position: relative;
 }
 
 .item:nth-child(n+4) {
@@ -31,35 +32,36 @@ body {
 }
 
 img {
-    max-width: 100%; /* Maintain original aspect ratio */
-    max-height: 100%; /* Maintain original aspect ratio */
-    width: auto; /* Ensure images don't get stretched */
-    height: auto; /* Ensure images don't get stretched */
+    max-width: 100%; 
+    max-height: 100%; 
+    width: auto;
+    height: auto; 
     display: block; /* Remove any extra space around images */
 }
 
 .circle-overlay {
     position: absolute;
-    width: 100px; /* Adjust size as needed */
-    height: auto; /* Maintain aspect ratio */
-    z-index: 999; /* Ensure it's on top of other content */
-    animation: rotateCircle 5s linear infinite; /* Rotate animation */
+    width: 100px; 
+    height: auto; 
+    z-index: 999; 
+    animation: rotateCircle 5s linear infinite; /* Rotating feature */
 }
 
 .circle-overlay img {
     width: 100%; /* Ensure the image fills the circle overlay */
 }
 
+/* First and second circles located left top and bottom right*/
 .first-circle {
-    top: 300px; /* Adjust top position */
-    left: 200px; /* Adjust right position */
-    width: 100px; /* Adjust size as needed */
+    top: 300px;
+    left: 200px; 
+    width: 100px; 
 }
 
 .second-circle {
-    bottom: 20px; /* Adjust bottom position */
-    right: 20px; /* Adjust right position */
-    width: 500px; /* Adjust size for the second circle */
+    bottom: 20px; 
+    right: 20px; 
+    width: 500px; 
 }
 
 @keyframes rotateCircle {
@@ -91,7 +93,7 @@ div.random {
 
 div.item.a {
     border-width: 50%;
-    transform: rotate(3.142rad);
+    transform: rotate(3.142rad); /* Rotate as motion */
 }
 
 div.item.b {

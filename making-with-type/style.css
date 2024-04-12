@@ -1,10 +1,11 @@
+/* Define 'asix-founder' */
 @font-face {
     font-family: 'asix-founder';
-
     src: url('asix-founder.woff');
 }
 
-body{
+/* Styling for the body, and it's A4 size like poster */
+body {
     background-color: #1e2b6a;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -15,81 +16,82 @@ body{
     position: relative; /* Set the body as the positioning context */
 }
 
+/* Styling for paragraphs */
 p {
     writing-mode: vertical-rl;
     text-orientation: upright;
     font-family: 'Helvetica';
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
+    background: linear-gradient(to bottom, #eee, #1e2b6a); /*linear gradient */
+    background-clip: text; 
     -webkit-text-fill-color: transparent;
-    position: absolute; /* Position the <p> element */
-    top: 0px; /* Adjust the distance from the top */
-    right: 0px; /* Adjust the distance from the right */
-    z-index: 999; /* Ensure it's on top of other content */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 999;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
+/* Styling for tab */
 div.tab {
-    width:50%;
+    width: 50%;
     margin-left: left;
     line-height: 0.75;
     color: #41a037;
-    /*margin-right: auto;*/
-    font-size:135px;
+    font-size: 135px;
     text-align: center;
-    /*background-color: yellow;*/
     font-family: 'asix-founder';
     font-weight: bold;
     letter-spacing: 3px;
-
 }
 
-div.tab.a{
+/* Different variations for tab to make random color */
+div.tab.a {
     background-color: #5e1f2c;
     width: fit-content;
 }
-div.tab.b{
+div.tab.b {
     background-color: #1e2b6a;
     width: fit-content;
 }
-div.tab.c{
+div.tab.c {
     background-color: #41a037;
     width: fit-content;
 }
-div.tab.d{
+div.tab.d {
     background-color: #ffffff;
     width: fit-content;
 }
 
-/* parent -sibling class들(a,b,c) */
-div.main{
+/* Styling for main */
+div.main {
     display: flex;
     flex-wrap: wrap;
 }
 
-div.headline{
+/* Styling for headline */
+div.headline {
     font-family: 'Iskry_One_EDU';
     font-weight: Regular;
 }
 
-/*Republic of*/
-div.headline.a{
+/* Different variations for tab to make random size */
+/* Republic of */
+div.headline.a {
     width: 70%;
     font-size: 39.2px;
     color: #ffffff;
-    /* text-transform, line-height로 여기서 변형도 줄 수 있음.(참고) */
 }
 
-/*Korea*/
-div.headline.b{
+/* Korea */
+div.headline.b {
     font-size: 150px;
     -webkit-text-stroke: 3px #ffffff;
     color: #41a037;
 }
 
-/*M081293830KOR2817349M3718294657399345V16253456*/
-div.headline.c{
+/* M081293830KOR2817349M3718294657399345V16253456 */
+div.headline.c {
     font-size: 18px;
     font-family: Iskry_One_EDU;
     -webkit-text-stroke: 0.3px #ffffff;
@@ -99,76 +101,69 @@ div.headline.c{
     margin-left: auto;
 }
 
-div.headline.one{
+/* Different variations for headline */
+div.headline.one {
     background-color: #41a037;
     border-end-end-radius: 50px 50px;
 }
-
-div.headline.two{
+div.headline.two {
     background-color: white;
 }
-
-div.headline.three{
+div.headline.three {
     background-color: #1e2b6a;
 }
-
-div.headline.x{
+div.headline.x {
+    display: block;
+}
+div.headline.y {
+    display: block;
+}
+div.headline.z {
     display: block;
 }
 
-div.headline.y{
-    display: block;
-}
-
-div.headline.z{
-    display: block;
-}
-
-/* anything with random can get this transition */
+/* Transition for elements with class 'random' */
 div.random {
-    transition: 1s;
+    transition: 2s;
 }
 
-/*M08129383*/
-h1{
+/* M08129383 */
+h1 {
     margin-top: 15px;
     margin-bottom: 10px;
     text-align: left;
     font-size: 55px;
     color: #5e1f2c;
-    font-family:국립박물관문화재단클래식M;
+    font-family: Helvetica;
     font-weight: Regular;
     -webkit-text-stroke: 1px #ffffff;
 }
 
-/*The Ministry of Foreign Affairs*/
-h2{
-    /* width 숫자 크기에 따라 col들의 간격띄우기가 달라짐 + width는 px가 아닌 %로 나타내야함. */
-    /*width: 15%;*/
+/* The Ministry of Foreign Affairs */
+h2 {
     font-family: Iskry_One_EDU;
     font-weight: lighter;
     font-size: 18px;
     color: #ffffff;
 }
 
-/*Is Valid*/
-h3{
+/* Is Valid */
+h3 {
     margin-top: 10px;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     line-height: 0.75;
     color: #41a037;
-    font-size:135px;
+    font-size: 135px;
     text-align: right;
-    /*background-color: yellow;*/
     font-family: 'asix-founder';
     font-weight: bold;
     letter-spacing: 3px;
 }
 
-/*Eunseo Lee*/
-h4{
+/* Eunseo Lee */
+h4 {
     margin-bottom: 8px;
     width: 63%;
     font-family: Iskry_One_EDU;
@@ -178,8 +173,8 @@ h4{
     letter-spacing: -0.5px;
 }
 
-/*paragraph*/
-h5{
+/* Paragraph */
+h5 {
     margin-top: 5px;
     width: 50%;
     font-family: Iskry_One_EDU;
