@@ -1,10 +1,84 @@
 body {
-    background-color: aqua;
-    background-image: url('background.jpg');
+    margin: 0;
+    padding: 0;
+    background-image: url('scanning.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
+
+.image-stack {
+    position: relative; /* Set positioning context for absolute positioning */
+    width: 100vw; /* Set width to fit the viewport width */
+    height: 100vh; /* Set height to fit the viewport height */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Align items in two columns */
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.item {
+    flex-basis: calc(33.33% - 20px); /* Three columns with gap */
+    margin-bottom: 20px; /* Adjust spacing between rows */
+    position: relative; /* Set positioning context for absolute positioning */
+}
+
+.item:nth-child(n+4) {
+    flex-basis: calc(25% - 20px); /* Four columns with gap */
+}
+
+img {
+    max-width: 100%; /* Maintain original aspect ratio */
+    max-height: 100%; /* Maintain original aspect ratio */
+    width: auto; /* Ensure images don't get stretched */
+    height: auto; /* Ensure images don't get stretched */
+    display: block; /* Remove any extra space around images */
+}
+
+.circle-overlay {
+    position: absolute;
+    width: 100px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 999; /* Ensure it's on top of other content */
+    animation: rotateCircle 5s linear infinite; /* Rotate animation */
+}
+
+.circle-overlay img {
+    width: 100%; /* Ensure the image fills the circle overlay */
+}
+
+.first-circle {
+    top: 300px; /* Adjust top position */
+    left: 200px; /* Adjust right position */
+    width: 100px; /* Adjust size as needed */
+}
+
+.second-circle {
+    bottom: 20px; /* Adjust bottom position */
+    right: 20px; /* Adjust right position */
+    width: 500px; /* Adjust size for the second circle */
+}
+
+@keyframes rotateCircle {
+    from {
+        transform: rotate(0deg); /* Rotate from 0 degrees */
+    }
+    to {
+        transform: rotate(360deg); /* Rotate to 360 degrees */
+    }
+}
+
+
+
+div.tab {
+    width:50%;
+    margin-left: left;
+    line-height: 0.75;
+}
+
 
 img{
     width: 100%;
@@ -12,18 +86,20 @@ img{
 
 div.random {
     transition: 0.7s;
+    position: relative;
 }
 
 div.item.a {
-    width: 25%;
+    size: 500%;
+    transform: rotate(3.142rad);
 }
 
 div.item.b {
-    width: 75%;
+    size: 500%;
 }
 
 div.item.c {
-    width: 50%;
+    width: 200%;
 }
 
 div.item.one {
@@ -58,49 +134,7 @@ div.item {
     flex-wrap: wrap;
 }
 
-
-
-
-div.layout.a {
-    width: 25%;
-}
-
-div.layout.b {
-    width: 75%;
-}
-
-div.layout.c {
-    width: 50%;
-}
-
-div.layout.one {
-    opacity: 0.2;
-    border-radius: 200px;
-    overflow: hidden;
-}
-
-div.layout.two {
-    opacity: 0.5;
-}
-
-div.layout.three {
-    opacity: 1;
-}
-
-div.layout.x {
-    margin-left: auto;
-}
-
-div.layout.y {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-div.layout.z {
-    opacity: 0;
-}
-
-div.layout {
+div.item {
     display: flex;
     flex-wrap: wrap;
 }

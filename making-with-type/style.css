@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'ASIX-FOUNDER';
+    font-family: 'asix-founder';
 
-    src: url('asix founder.woff');
+    src: url('asix-founder.woff');
 }
 
 body{
@@ -23,7 +23,7 @@ div.tab {
     font-size:135px;
     text-align: center;
     /*background-color: yellow;*/
-    font-family: 'ASIX-FOUNDER';
+    font-family: 'asix-founder';
     font-weight: bold;
     letter-spacing: 3px;
 
@@ -53,7 +53,7 @@ div.main{
 }
 
 div.headline{
-    font-family: 'Medium';
+    font-family: 'Iskry_One_EDU';
     font-weight: Regular;
 }
 
@@ -75,7 +75,7 @@ div.headline.b{
 /*M081293830KOR2817349M3718294657399345V16253456*/
 div.headline.c{
     font-size: 18px;
-    font-family: Iskry EDU;
+    font-family: Iskry_One_EDU;
     -webkit-text-stroke: 0.3px #ffffff;
     color: #5e1f2c;
     font-weight: lighter;
@@ -120,7 +120,7 @@ h1{
     text-align: left;
     font-size: 55px;
     color: #5e1f2c;
-    font-family:Medium;
+    font-family:국립박물관문화재단클래식M;
     font-weight: Regular;
     -webkit-text-stroke: 1px #ffffff;
 }
@@ -129,7 +129,7 @@ h1{
 h2{
     /* width 숫자 크기에 따라 col들의 간격띄우기가 달라짐 + width는 px가 아닌 %로 나타내야함. */
     /*width: 15%;*/
-    font-family: Iskry EDU;
+    font-family: Iskry_One_EDU;
     font-weight: lighter;
     font-size: 18px;
     color: #ffffff;
@@ -146,7 +146,7 @@ h3{
     font-size:135px;
     text-align: right;
     /*background-color: yellow;*/
-    font-family: 'ASIX-FOUNDER';
+    font-family: 'asix-founder';
     font-weight: bold;
     letter-spacing: 3px;
 }
@@ -155,7 +155,7 @@ h3{
 h4{
     margin-bottom: 8px;
     width: 63%;
-    font-family: Iskry EDU;
+    font-family: Iskry_One_EDU;
     font-weight: lighter;
     font-size: 18px;
     color: #ffffff;
@@ -166,7 +166,7 @@ h4{
 h5{
     margin-top: 5px;
     width: 50%;
-    font-family: Iskry EDU;
+    font-family: Iskry_One_EDU;
     font-weight: Lighter;
     font-size: 18px;
     color: #ffffff;
