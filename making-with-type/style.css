@@ -12,7 +12,23 @@ body{
     width: 210mm;
     height: 297mm;
     border: 30px solid #1e2b6a;
+    position: relative; /* Set the body as the positioning context */
 }
+
+p {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: 'Helvetica';
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute; /* Position the <p> element */
+    top: 0px; /* Adjust the distance from the top */
+    right: 0px; /* Adjust the distance from the right */
+    z-index: 999; /* Ensure it's on top of other content */
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 div.tab {
     width:50%;
