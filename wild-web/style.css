@@ -2,6 +2,7 @@
 
 body {
     background-color: black;
+    background-image: url("bluewall.jpg");
     color: white;
     margin: 10px;
     padding: 0px;
@@ -26,16 +27,33 @@ div.largetext {
 
 div.mediumtext {
     font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     line-height: 27.72px;
+}
+
+div.semimediumtext {
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    line-height: 22px;
 }
 
 div.smalltext {
     font-size: 16px;
     line-height: 18px;
+    padding-bottom: 30px;
+}
+
+div.padding {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
 }
 
 div.serif {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 div.sans {
@@ -43,7 +61,11 @@ div.sans {
 }
 
 div.mono {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.impact {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 /* colors */
@@ -56,12 +78,28 @@ div.textred {
     color: red;
 }
 
+div.textpink {
+    color: magenta;
+}
+
+div.textblack {
+    color: black;
+}
+
+div.textbeige {
+    color: beige;
+}
+
 div.bggray {
     background-color: gray;
 }
 
 div.bgwhite {
     background-color: white;
+}
+
+div.bgblack {
+    background-color: black;
 }
 
 /* widths */
@@ -149,4 +187,12 @@ div.title {
 
 div.body {
     line-height: 50px;
+}
+
+div.heightmedium{
+    line-height: 100px;
+}
+
+div.padding100{
+    padding-bottom: 100px;
 }
